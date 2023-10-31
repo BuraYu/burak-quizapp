@@ -11,10 +11,11 @@ header {
 
 .nav-bar {
   width: 1000px;
-  height: 250px;
+  height: 200px;
   color: white;
   background-color: #1abc9c;
-  border-radius: 5px;
+  border-radius: 0 0 33px 33px;
+  box-shadow: 0 0 10px #186b46;
 }
 
 h1 {
@@ -22,7 +23,7 @@ h1 {
   font-family: ;
   color: white;
   text-align: center;
-  padding-top: 57.5px;
+  padding-top: 33px;
   font-family: Georgia, serif;
 }
 
