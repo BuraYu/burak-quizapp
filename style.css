@@ -4,6 +4,10 @@
   font-family: Georgia, serif;
 }
 
+body {
+  position: relative;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -49,6 +53,7 @@ h3 {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  position: relative;
 }
 
 .question {
@@ -91,6 +96,13 @@ h3 {
   font-size: 10px;
 }
 
+.bookmark-quiz-img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+}
 .success {
   background-color: #04aa6d;
 } /* Green */
@@ -108,12 +120,27 @@ h3 {
 }
 
 .footer {
+  width: 100%;
+  height: 75px;
   display: flex;
   justify-content: space-around;
-  border: 3px solid yellow;
+  position: fixed;
+  bottom: 0;
+  background-color: grey;
 }
 
 .footer-item {
-  font-size: 30px;
-  color: blueviolet;
+  color: black;
+  height: 20px;
+  width: 20px;
+}
+
+.first-img {
+  background-color: rgb(174, 174, 174);
+}
+
+.footer-img {
+  height: 75px;
+
+  width: 75px;
 }
