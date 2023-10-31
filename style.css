@@ -1,3 +1,292 @@
 * {
-  background-color: blue;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+}
+
+.nav-bar {
+  width: 1000px;
+  height: 200px;
+  color: white;
+  background-color: #1abc9c;
+  border-radius: 0 0 33px 33px;
+  box-shadow: 0 0 10px #186b46;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 75px;
+  font-family: ;
+  color: white;
+  text-align: center;
+  padding-top: 33px;
+  font-family: Georgia, serif;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 30px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.quiz-item {
+  width: 350px;
+  height: 300px;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+}
+
+.question {
+  margin-top: 37px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.btn-quiz {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  box-shadow: 1px 2px 5px #c51a1a;
+}
+
+.btn-quiz:hover {
+  box-shadow: 0px 0px 0px #ffffff;
+  color: white;
+}
+
+.tags {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 20px;
+  gap: 10px;
+}
+
+.label {
+  color: white;
+  padding: 3px;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.bookmark-quiz-img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+}
+.success {
+  background-color: #04aa6d;
+} /* Green */
+.info {
+  background-color: #2196f3;
+} /* Blue */
+.warning {
+  background-color: #ff9800;
+} /* Orange */
+
+.flex-item {
+  width: 350px;
+  height: 300px;
+  background-color: rgb(213, 213, 213);
+}
+
+.footer {
+  width: 1000px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  background-color: grey;
+}
+
+.footer-item {
+  color: black;
+  height: 20px;
+  width: 20px;
+}
+
+.first-footer-img {
+  background-color: rgb(174, 174, 174);
+}
+
+.footer-img {
+  height: 50px;
+  width: 50px;
+}
+
+.flex-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid green;
+  width: 500px;
+}
+
+.me-img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.profile-heading {
+  color: black;
+  font-size: 20px;
+  padding-top: 60px;
+}
+
+.about-me {
+  padding-left: 40px;
+}
+
+.aboutme-heading {
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.counter img {
+  height: 25px;
+  width: 25px;
+}
+
+.profile-label {
+  width: 125px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting {
+  display: flex;
+  justify-content: start;
+  padding-left: 40px;
+}
+
+.darkmode-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+  align-items: center;
+}
+
+.counter-img {
+}
+.counter-text {
+}
+
+/*** slider 
+
+source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch
+
+****/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
