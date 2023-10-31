@@ -1,17 +1,35 @@
 * {
-  background-color: blue;
   margin: 0;
   padding: 0;
 }
 
-.nav-bar {
-  font-size: 30px;
-  color: beige;
-  text-align: center;
-  border-style: solid;
-  border-color: green;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.nav-bar {
+  width: 1000px;
+  height: 250px;
+  color: white;
+  background-color: #1abc9c;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 75px;
+  font-family: ;
+  color: white;
+  text-align: center;
+  padding-top: 57.5px;
+  font-family: Georgia, serif;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 30px;
+}
 .flex-container {
   display: flex;
   flex-direction: column;
