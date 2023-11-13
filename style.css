@@ -101,6 +101,7 @@ h3 {
   top: 0;
   right: 0;
 }
+
 .success {
   background-color: #04aa6d;
 } /* Green */
@@ -115,6 +116,38 @@ h3 {
   width: 350px;
   height: 300px;
   background-color: rgb(213, 213, 213);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#question {
+  margin-bottom: 15%;
+  padding: 5px;
+}
+
+#answer {
+  margin-bottom: 20%;
+  padding: 5px;
+}
+
+#tags {
+  margin-bottom: 15%;
+  padding: 5px;
+}
+
+.btn-submit {
+  width: 120px;
+  height: 35px;
+  align-self: center;
+}
+.quiz-item-form {
+  visibility: hidden;
 }
 
 .footer {
@@ -220,6 +253,10 @@ ul {
 
 .counter-text {
   color: black;
+}
+
+.quiz-item .show-answer {
+  visibility: hidden;
 }
 
 /*** slider 
