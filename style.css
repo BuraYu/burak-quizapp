@@ -101,6 +101,7 @@ h3 {
   top: 0;
   right: 0;
 }
+
 .success {
   background-color: #04aa6d;
 } /* Green */
@@ -220,6 +221,10 @@ ul {
 
 .counter-text {
   color: black;
+}
+
+.quiz-item .show-answer {
+  visibility: hidden;
 }
 
 /*** slider 
