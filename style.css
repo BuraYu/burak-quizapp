@@ -123,6 +123,7 @@ form {
   flex-direction: column;
   align-items: space-between;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 #question {
@@ -144,6 +145,9 @@ form {
   width: 120px;
   height: 35px;
   align-self: center;
+}
+.quiz-item-form {
+  visibility: hidden;
 }
 
 .footer {

@@ -2,7 +2,7 @@ const button = document.querySelector(".btn-quiz");
 const answer = document.querySelector(".show-answer");
 const bookmark = document.getElementById("img-change");
 
-button.addEventListener("click", function () {
+button.addEventListener("click", () => {
   if (answer.style.visibility == "hidden") {
     answer.style.visibility = "visible";
     button.textContent = "Hide answer";

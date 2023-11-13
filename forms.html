@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="/js/form.js" defer></script>
 
     <title>Document</title>
   </head>
+  <body>
   <html>
     <header>
       <nav class="nav-bar">
@@ -14,19 +16,21 @@
         <h3>at the Spiced Academy</h3>
       </nav>
     </header>
+    <div class="wrapper">
 
-    <form action="">
+    
+    <form action="" class="form">
         <label for="question">Your question</label>
-        <textarea name="question" id="question" cols="40" rows="6"></textarea>
+        <textarea name="question-text" id="question" cols="40" rows="6"></textarea>
 
         <label for="answer">Your answer</label>
         <textarea name="answer" id="answer" cols="40" rows="6"></textarea>
 
         <label for="tags">Your tags</label>
         <input type="text" id="tags" name="tags">
-        <button class="btn-submit">Submit</button>
+        <button class="btn-submit" type="button">Submit</button>
     </form>
-
+</div>
     <footer class="footer">
       <div class="footer-item footer-item1">
         <a href="index.html"
@@ -53,7 +57,6 @@
       </div>
     </footer>
   </body>
-  <script src="/js/script.js"></script>
 </html>
 
 <svg><use xlink:href="/all.svg#gg-profile" /></svg>
