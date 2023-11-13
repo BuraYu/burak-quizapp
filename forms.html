@@ -21,14 +21,16 @@
     
     <form action="" class="form" data-js="form">
         <label for="question">Your question</label>
-        <textarea name="question-text" id="question" cols="40" rows="6"></textarea>
+        <textarea name="question-text" id="question" cols="40" rows="6" maxlength="150"></textarea>
+        <span id="question-char-count" class="char-count">150 characters remaining</span>
 
         <label for="answer">Your answer</label>
-        <textarea name="answer" id="answer" cols="40" rows="6"></textarea>
+        <textarea name="answer" id="answer" cols="40" rows="6" maxlength="150"></textarea>
+        <span id="answer-char-count" class="char-count">150 characters remaining</span>
 
         <label for="tags">Your tags</label>
         <input type="text" id="tags" name="tags">
-        <button class="submit" type="click">Submit</button>
+        <button class="submit" type="submit">Submit</button>
     </form>
 </div>
     <footer class="footer">
@@ -59,3 +61,4 @@
   </body>
 </html>
 
+<svg><use xlink:href="/all.svg#gg-profile" /></svg>

@@ -26,6 +26,10 @@
 
 const form = document.querySelector('[data-js="form"]');
 const wrapper = document.querySelector(".wrapper");
+const questionTextarea = document.getElementById("question");
+const answerTextarea = document.getElementById("answer");
+const questionCharCount = document.getElementById("question-char-count");
+const answerCharCount = document.getElementById("answer-char-count");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -55,3 +59,22 @@ form.addEventListener("submit", (event) => {
   // Insert the HTML content after the wrapper
   wrapper.insertAdjacentHTML("afterend", htmlContent);
 });
+
+// Add event listeners for character count
+questionTextarea.addEventListener(
+  "input",
+  updateCharCount.bind(null, questionTextarea, questionCharCount)
+);
+answerTextarea.addEventListener(
+  "input",
+  updateCharCount.bind(null, answerTextarea, answerCharCount)
+);
+
+// Function to update character count
+function updateCharCount(textarea, charCountElement) {
+  const maxLength = parseInt(textarea.getAttribute("maxlength"));
+  const remainingChars = maxLength - textarea.value.length;
+  charCountElement.textContent = `${remainingChars} character${
+    remainingChars !== 1 ? "s" : ""
+  } remaining`;
+}
